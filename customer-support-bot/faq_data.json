@@ -1,0 +1,82 @@
+[
+  {
+    "id": "what_is_portal",
+    "keywords": ["portal", "what is", "about", "नीर निदान", "पोर्टल", "क्या है", "परिचय"],
+    "question_en": "What is the Neer Nidaan portal?",
+    "answer_en": "Neer Nidaan is a web portal and digital platform developed by the Government of Uttar Pradesh to address public grievances and issues regarding rural drinking water supply, pipe damage, road repair, water quality, and new connections. It acts as a digital bridge between citizens and UP Jal Nigam (Rural).",
+    "question_hi": "नीर निदान पोर्टल क्या है?",
+    "answer_hi": "नीर निदान उत्तर प्रदेश सरकार द्वारा विकसित एक वेब पोर्टल और डिजिटल प्लेटफॉर्म है, जिसके माध्यम से ग्रामीण पेयजल आपूर्ति, क्षतिग्रस्त पाइपलाइन, सड़क मरम्मत, पानी की गुणवत्ता और नए कनेक्शन से जुड़ी जन शिकायतों का त्वरित निवारण किया जाता है। यह नागरिकों और यूपी जल निगम (ग्रामीण) के बीच एक डिजिटल सेतु है।"
+  },
+  {
+    "id": "how_to_register",
+    "keywords": ["register", "lodge", "complaint", "file", "शिकायत", "दर्ज", "कैसे करें"],
+    "question_en": "How do I register a complaint?",
+    "answer_en": "You can register a complaint through 6 channels: 1) Call Toll-Free Helpline 18001212165. 2) Send 'Hi' on WhatsApp. 3) Call the IVRS system. 4) Use this Chatbot directly. 5) Use the Neer Nidaan Android mobile app. 6) Log in with OTP on the website https://neernidaan.in/ and submit details.",
+    "question_hi": "मैं शिकायत कैसे दर्ज करूँ?",
+    "answer_hi": "आप 6 माध्यमों से शिकायत दर्ज कर सकते हैं: 1) टोल-फ्री हेल्पलाइन 18001212165 पर कॉल करें। 2) व्हाट्सएप पर 'Hi' भेजें। 3) IVRS सिस्टम के माध्यम से। 4) इस चैटबॉट से बात करके। 5) नीर निदान एंड्रॉइड ऐप डाउनलोड करके। 6) https://neernidaan.in/ वेबसाइट पर मोबाइल नंबर और OTP से लॉगिन करके।"
+  },
+  {
+    "id": "track_complaint",
+    "keywords": ["track", "status", "check", "complaint status", "स्थिति", "जांच", "ट्रैक"],
+    "question_en": "How can I check my complaint status?",
+    "answer_en": "When your complaint is registered, a unique complaint number along with a status link and QR code is sent to you via SMS and WhatsApp. You can click that link, or scan the QR code, or log into the portal/mobile app with your mobile OTP to check the real-time status of your complaint.",
+    "question_hi": "मैं अपनी शिकायत की स्थिति (स्टेटस) कैसे देख सकता हूँ?",
+    "answer_hi": "शिकायत दर्ज होते ही आपको SMS और WhatsApp पर शिकायत संख्या, ट्रैकिंग लिंक और QR कोड भेजा जाता है। आप उस लिंक पर क्लिक करके, QR कोड स्कैन करके, या वेबसाइट/मोबाइल ऐप पर OTP से लॉगिन करके अपनी शिकायत की वर्तमान स्थिति देख सकते हैं।"
+  },
+  {
+    "id": "select_department",
+    "keywords": ["department", "which department", "select", "विभाग", "चयन", "कौन सा विभाग"],
+    "question_en": "Which department should I select for water grievances?",
+    "answer_en": "For rural water supply and sanitation complaints, you should select the 'Namami Gange and Rural Water Supply Department' or 'UP Jal Nigam (Rural)'. The Neer Nidaan portal automatically routes rural water issues to these bodies under the State Water and Sanitation Mission (SWSM).",
+    "question_hi": "जलापूर्ति संबंधी शिकायत के लिए मुझे किस विभाग का चयन करना चाहिए?",
+    "answer_hi": "ग्रामीण पेयजल आपूर्ति और स्वच्छता संबंधी शिकायतों के लिए आपको 'नमामी गंगे तथा ग्रामीण जलापूर्ति विभाग' या 'यूपी जल निगम (ग्रामीण)' का चयन करना चाहिए। नीर निदान पोर्टल इन शिकायतों को राज्य पेयजल एवं स्वच्छता मिशन (SWSM) के अंतर्गत संबंधित विभाग को स्वचालित रूप से भेजता है।"
+  },
+  {
+    "id": "documents_required",
+    "keywords": ["documents", "required", "proof", "id", "दस्तावेज", "आवश्यक", "प्रमाण"],
+    "question_en": "What documents are required to register a complaint?",
+    "answer_en": "No documents are required to register a grievance. You only need to verify your identity using a mobile OTP, and provide your location details (District, Block, Panchayat, and Village) and a brief description of the water issue.",
+    "question_hi": "शिकायत दर्ज करने के लिए किन दस्तावेजों की आवश्यकता है?",
+    "answer_hi": "शिकायत दर्ज करने के लिए किसी दस्तावेज़ की आवश्यकता नहीं है। आपको केवल अपने मोबाइल नंबर पर आए OTP से सत्यापन करना होगा, और अपने पते का विवरण (जिला, ब्लॉक, पंचायत, गाँव) तथा समस्या की जानकारी देनी होगी।"
+  },
+  {
+    "id": "available_services",
+    "keywords": ["services", "available", "categories", "issues", "सुविधाएँ", "सेवाएँ", "प्रकार"],
+    "question_en": "What services or complaint categories are available?",
+    "answer_en": "The portal handles water-related complaints across 6 categories: 1) Water Supply Interruptions (जलापूर्ति बाधा) 2) Water Quality Issues (जल की गुणवत्ता) 3) Damaged Pipelines (क्षतिग्रस्त पाइपलाइन) 4) New Connection Queries (नया कनेक्शन) 5) Road Repair after pipe laying (सड़क मरम्मत) 6) Other water grievances (अन्य).",
+    "question_hi": "कौन-कौन सी सेवाएँ या शिकायत श्रेणियाँ उपलब्ध हैं?",
+    "answer_hi": "पोर्टल पर जलापूर्ति से जुड़ी 6 श्रेणियों में शिकायतें दर्ज की जा सकती हैं: 1) जलापूर्ति बाधा (Water Supply Interruptions) 2) जल की गुणवत्ता (Water Quality) 3) क्षतिग्रस्त पाइपलाइन (Damaged Pipeline) 4) नया कनेक्शन (New Connection Queries) 5) पाइप बिछाने के बाद सड़क मरम्मत (Road Repair) 6) अन्य समस्याएँ (Other)."
+  },
+  {
+    "id": "helpline_number",
+    "keywords": ["helpline", "toll free", "number", "contact", "support", "हेल्पलाइन", "टोल फ्री", "नंबर", "फ़ोन"],
+    "question_en": "What is the helpline number for Neer Nidaan?",
+    "answer_en": "The toll-free helpline number for Neer Nidaan is 1800-121-2165. You can call this number 24/7 to register a complaint through a customer agent or hear details.",
+    "question_hi": "नीर निदान का हेल्पलाइन नंबर क्या है?",
+    "answer_hi": "नीर निदान का टोल-फ्री हेल्पलाइन नंबर 1800-121-2165 है। आप किसी भी समय इस नंबर पर कॉल करके कॉल सेंटर ऑपरेटर के माध्यम से अपनी शिकायत दर्ज करवा सकते हैं।"
+  },
+  {
+    "id": "resolution_time",
+    "keywords": ["duration", "resolution", "time", "how long", "time limit", "समय", "निवारण", "कितना समय", "अवधि"],
+    "question_en": "How long does the grievance resolution take?",
+    "answer_en": "Complaints are resolved in a time-bound manner depending on the severity of the issue (e.g. pipeline bursts are prioritized). The department tracks and monitors the resolution progress. Senior officers oversee pending requests to ensure quick resolution.",
+    "question_hi": "शिकायत के निवारण में कितना समय लगता है?",
+    "answer_hi": "शिकायतों का समाधान समयबद्ध तरीके से किया जाता है। निवारण का समय समस्या के प्रकार (जैसे पाइपलाइन फटने को प्राथमिकता दी जाती है) पर निर्भर करता है। उच्चाधिकारियों द्वारा सभी लंबित शिकायतों की निगरानी की जाती है ताकि उनका त्वरित निस्तारण हो सके।"
+  },
+  {
+    "id": "give_feedback",
+    "keywords": ["feedback", "rating", "review", "सुझाव", "फीडबैक", "रेटिंग"],
+    "question_en": "Where can I give feedback about the service?",
+    "answer_en": "Once your complaint is resolved, you will receive an alert. You can submit your feedback directly on the website https://neernidaan.in/, on the mobile app, or via this chatbot using the Session Feedback section.",
+    "question_hi": "मैं सेवा के बारे में अपना फीडबैक या सुझाव कहाँ दे सकता हूँ?",
+    "answer_hi": "आपकी शिकायत का निवारण होने के बाद, आप https://neernidaan.in/ वेबसाइट पर, मोबाइल ऐप पर, या इस चैटबॉट के फीडबैक फॉर्म के माध्यम से अपनी रेटिंग और विचार दर्ज कर सकते हैं।"
+  },
+  {
+    "id": "announcements_schemes",
+    "keywords": ["announcements", "schemes", "jal jeevan", "jjm", "योजनाएं", "घोषणाएं", "जल जीवन"],
+    "question_en": "What schemes or announcements are currently active?",
+    "answer_en": "The major active scheme is the Jal Jeevan Mission (JJM), which targets supplying 55 liters of safe drinking water per capita daily to all rural households in Uttar Pradesh via Functional Household Tap Connections (FHTC) by 2025.",
+    "question_hi": "वर्तमान में कौन सी योजनाएं या घोषणाएं सक्रिय हैं?",
+    "answer_hi": "मुख्य सक्रिय योजना 'जल जीवन मिशन' (JJM) है, जिसका लक्ष्य 2025 तक उत्तर प्रदेश के सभी ग्रामीण घरों में क्रियाशील घरेलू नल कनेक्शन (FHTC) के माध्यम से प्रति व्यक्ति प्रतिदिन 55 लीटर सुरक्षित पेयजल उपलब्ध कराना है।"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "code": "SWSM",
+    "name_en": "State Water and Sanitation Mission (SWSM), Uttar Pradesh",
+    "name_hi": "राज्य पेयजल एवं स्वच्छता मिशन (SWSM), उत्तर प्रदेश",
+    "description_en": "SWSM is the nodal executing agency responsible for coordinating and implementing the Jal Jeevan Mission in Uttar Pradesh, monitoring rural water sanitation, and facilitating community-based water projects.",
+    "description_hi": "SWSM उत्तर प्रदेश में जल जीवन मिशन के समन्वय और कार्यान्वयन, ग्रामीण जल स्वच्छता की निगरानी और समुदाय-आधारित जल परियोजनाओं को सुविधाजनक बनाने के लिए जिम्मेदार नोडल निष्पादन एजेंसी है।"
+  },
+  {
+    "code": "UPJN_RURAL",
+    "name_en": "Uttar Pradesh Jal Nigam (Rural)",
+    "name_hi": "उत्तर प्रदेश जल निगम (ग्रामीण)",
+    "description_en": "UP Jal Nigam (Rural) constructs and manages rural drinking water supply, sewerage infrastructure, and handles major technical pipe connections outside urban cantonment areas.",
+    "description_hi": "यूपी जल निगम (ग्रामीण) छावनी क्षेत्रों के बाहर ग्रामीण पेयजल आपूर्ति, सीवरेज बुनियादी ढांचे का निर्माण और प्रबंधन करता है और बड़े तकनीकी पाइप कनेक्शन संभालता है।"
+  },
+  {
+    "code": "NAMAMI_GANGE",
+    "name_en": "Namami Gange & Rural Water Supply Department",
+    "name_hi": "नमामी गंगे तथा ग्रामीण जलापूर्ति विभाग",
+    "description_en": "The administrative department governing water policy, river cleaning, rural drinking water supply pipelines, and supervision of Jal Jeevan Mission operations in the state.",
+    "description_hi": "राज्य में जल नीति, नदी सफाई, ग्रामीण पेयजल आपूर्ति पाइपलाइनों और जल जीवन मिशन के संचालन के पर्यवेक्षण को नियंत्रित करने वाला प्रशासनिक विभाग।"
+  }
+]

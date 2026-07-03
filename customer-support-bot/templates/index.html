@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शिकायत सहायक - नीर निदान पोर्टल</title>
+    <!-- Google Fonts: Mukta (Hindi) & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="light-theme">
+    <!-- Main Dashboard Layout split into Portal/Chat Area and Developer Console -->
+    <div class="main-split-container">
+        
+        <!-- Left Section: Mock Neer Nidaan Portal & Floating Chatbot Overlay -->
+        <div class="portal-mock-container">
+            
+            <!-- Mock Website Header -->
+            <header class="mock-site-header">
+                <div class="mock-logo-area">
+                    <img src="https://neernidaan.in/assets/images/logo.png" alt="Gov Logo" onerror="this.style.display='none'">
+                    <span class="mock-gov-title">उत्तर प्रदेश सरकार | जल जीवन मिशन</span>
+                </div>
+                <nav class="mock-nav">
+                    <span>मुख्य पृष्ठ</span>
+                    <span>उपयोगकर्ता पुस्तिका</span>
+                    <span>संपर्क करें</span>
+                    <span class="active">शिकायत / समस्या दर्ज करें</span>
+                </nav>
+            </header>
+
+            <!-- Mock Website Hero Banner -->
+            <div class="mock-hero-banner">
+                <div class="mock-banner-content">
+                    <div class="leader-photo-card">
+                        <!-- Graphic representing Shri Yogi Adityanath -->
+                        <div class="leader-avatar"></div>
+                        <div class="leader-info">
+                            <h3>श्री योगी आदित्यनाथ</h3>
+                            <p>माननीय मुख्यमंत्री, उत्तर प्रदेश</p>
+                        </div>
+                    </div>
+                    <div class="banner-slogan-box">
+                        <h2>जल समस्या समाधान के लिए चैटबॉट उपलब्ध है।</h2>
+                        <p>नीर निदान पोर्टल जन शिकायतों के त्वरित निस्तारण हेतु 24x7 सक्रिय डिजिटल सेतु है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOCK WEBSITE FLOATING TRIGGER BUBBLE (Bottom Left) -->
+            <div class="floating-chat-trigger" onclick="openChatWidget()" id="chat-trigger" title="शिकायत सहायक से बात करें">
+                <div class="trigger-inner">
+                    <svg viewBox="0 0 100 100" width="40" height="40">
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#FFF" stroke-width="4"/>
+                        <rect x="25" y="38" width="50" height="34" rx="8" fill="#FFF"/>
+                        <circle cx="40" cy="52" r="4" fill="#6A0DAD"/>
+                        <circle cx="60" cy="52" r="4" fill="#6A0DAD"/>
+                        <path d="M42 62 Q50 67 58 62" fill="none" stroke="#6A0DAD" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="47" y="24" width="6" height="14" rx="2" fill="#FFF"/>
+                        <circle cx="50" cy="22" r="5" fill="#FFAB00"/>
+                        <path d="M25 50 L15 50 M75 50 L85 50" stroke="#FFF" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    <span class="pulse-ring"></span>
+                </div>
+            </div>
+
+            <!-- CHAT WIDGET OVERLAY (Centered / Floating exactly like the screenshot) -->
+            <div class="chat-widget-card" id="chat-widget">
+                
+                <!-- Chatbot Widget Header -->
+                <header class="widget-header">
+                    <div class="bot-profile-info">
+                        <!-- Robot Avatar SVG -->
+                        <svg class="robot-avatar-icon" viewBox="0 0 100 100" width="44" height="44">
+                            <!-- Antennas / Ears -->
+                            <rect x="18" y="44" width="8" height="16" rx="3" fill="#D8B4FE"/>
+                            <rect x="74" y="44" width="8" height="16" rx="3" fill="#D8B4FE"/>
+                            <rect x="47" y="10" width="6" height="20" fill="#E9D5FF"/>
+                            <circle cx="50" cy="8" r="6" fill="#F43F5E"/>
+                            <!-- Head -->
+                            <rect x="24" y="26" width="52" height="50" rx="16" fill="#F3F4F6" stroke="#C084FC" stroke-width="4"/>
+                            <!-- Cheeks -->
+                            <circle cx="34" cy="62" r="6" fill="#FDA4AF"/>
+                            <circle cx="66" cy="62" r="6" fill="#FDA4AF"/>
+                            <!-- Eyes -->
+                            <circle cx="40" cy="46" r="5" fill="#4B5563"/>
+                            <circle cx="60" cy="46" r="5" fill="#4B5563"/>
+                            <!-- Mouth -->
+                            <path d="M42 58 Q50 64 58 58" fill="none" stroke="#4B5563" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                        <div class="bot-titles">
+                            <h2 class="widget-title">शिकायत सहायक</h2>
+                            <p class="widget-subtitle">👋 मैं आपकी सहायता के लिए तैयार हूँ</p>
+                        </div>
+                    </div>
+                    <!-- Right Actions -->
+                    <div class="widget-actions">
+                        <button class="header-action-btn refresh-btn" onclick="resetChat()" title="रीसेट करें">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </button>
+                        <button class="header-action-btn close-btn" onclick="closeChatWidget()" title="बंद करें">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Chat Messages & Welcome Card Container -->
+                <div class="widget-chat-window" id="chat-window">
+                    
+                    <!-- Welcome Card (Exact styling from screenshot) -->
+                    <div class="screenshot-welcome-container" id="welcome-screen">
+                        <div class="welcome-inner-card">
+                            
+                            <!-- Left: Discussion Group Icon Card -->
+                            <div class="discussion-icon-card">
+                                <svg viewBox="0 0 100 100" width="50" height="50">
+                                    <circle cx="35" cy="40" r="12" fill="#E0F2FE"/>
+                                    <path d="M20 70 C20 55, 50 55, 50 70 Z" fill="#93C5FD"/>
+                                    <circle cx="65" cy="40" r="12" fill="#DCFCE7"/>
+                                    <path d="M50 70 C50 55, 80 55, 80 70 Z" fill="#86EFAC"/>
+                                    <circle cx="50" cy="30" r="10" fill="#F3E8FF"/>
+                                    <path d="M38 60 C38 48, 62 48, 62 60 Z" fill="#C084FC"/>
+                                    <!-- Discussion bubble lines -->
+                                    <path d="M30 18 Q50 10 70 18" stroke="#6B7280" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+
+                            <!-- Right: Welcome Text and Emojis -->
+                            <div class="welcome-text-content">
+                                <h3 class="welcome-heading">👋 नमस्ते!<br>नीर निदान पोर्टल में आपका स्वागत है</h3>
+                                <ul class="welcome-bullets">
+                                    <li><span class="emoji-bullet">💧</span> आप यहाँ <strong>शिकायत दर्ज</strong> कर सकते हैं,</li>
+                                    <li><span class="emoji-bullet">📊</span> <strong>स्थिति देख</strong> सकते हैं,</li>
+                                    <li><span class="emoji-bullet">💬</span> या <strong>प्रतिक्रिया दे</strong> सकते हैं।</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- 6 Quick Action Grid Cards underneath -->
+                        <div class="widget-quick-grid">
+                            <div class="quick-grid-card" onclick="triggerQuickAction('register')">
+                                <i class="fa-solid fa-file-pen"></i>
+                                <span>शिकायत दर्ज करें</span>
+                            </div>
+                            <div class="quick-grid-card" onclick="triggerQuickAction('track')">
+                                <i class="fa-solid fa-magnifying-glass-location"></i>
+                                <span>स्थिति जांचें</span>
+                            </div>
+                            <div class="quick-grid-card" onclick="triggerQuickAction('feedback')">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>प्रतिक्रिया दें</span>
+                            </div>
+                            <div class="quick-grid-card" onclick="triggerQuickAction('support')">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>सहायता डेस्क</span>
+                            </div>
+                            <div class="quick-grid-card" onclick="triggerQuickAction('faq')">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span>सामान्य प्रश्न</span>
+                            </div>
+                            <div class="quick-grid-card" onclick="triggerQuickAction('services')">
+                                <i class="fa-solid fa-hand-holding-droplet"></i>
+                                <span>पोर्टल सेवाएं</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Bubbles will render here dynamically -->
+                </div>
+
+                <!-- Input Area (Exact replication of bottom bar) -->
+                <footer class="widget-footer">
+                    <div id="typing-indicator" class="typing-indicator hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        लिख रहा है...
+                    </div>
+                    <form id="chat-form" class="widget-input-form">
+                        
+                        <!-- Left Circular Red Icon -->
+                        <div class="left-input-bubble-btn">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+
+                        <!-- Central text input -->
+                        <input type="text" id="chat-input" placeholder="अपना जवाब लिखें या बोलें..." autocomplete="off" required>
+                        
+                        <!-- Right buttons container -->
+                        <div class="right-input-buttons">
+                            <!-- Green Send Button -->
+                            <button type="submit" id="send-btn" class="input-btn green-btn" title="भेजें">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <!-- Yellow Mic Button -->
+                            <button type="button" id="voice-input-btn" class="input-btn yellow-btn" onclick="toggleVoiceInput()" title="बोलें">
+                                <i class="fa-solid fa-microphone"></i>
+                            </button>
+                            <!-- Blue Action Skip/Play Button -->
+                            <button type="button" id="toggle-voice-btn" class="input-btn blue-btn active" title="आवाज बंद/चालू">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </footer>
+            </div>
+            
+        </div>
+
+        <!-- Right Section: Collapsible Developer & Citizen Console -->
+        <div class="console-sidebar-right" id="console-sidebar">
+            <div class="console-toggle-handle" onclick="toggleConsoleSidebar()" title="डेवलपर कंसोल खोलें/बंद करें">
+                <i class="fa-solid fa-terminal"></i>
+                <span>CONSOLE</span>
+            </div>
+
+            <div class="console-scroll-content">
+                <!-- Citizen Profile Linker -->
+                <div class="card console-card">
+                    <h3><i class="fa-solid fa-user-shield"></i> नागरिक प्रोफ़ाइल (Citizen Profile)</h3>
+                    <p class="section-desc">अपना नाम, ईमेल और मोबाइल नंबर लिंक करें ताकि शिकायतें डेटाबेस में स्वतः जुड़ सकें।</p>
+                    
+                    <form id="customer-form">
+                        <div class="input-group">
+                            <label for="cust-name">पूरा नाम (Name)</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" id="cust-name" placeholder="John Doe" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="cust-email">ईमेल पता (Email)</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" id="cust-email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="cust-phone">मोबाइल संख्या (Mobile)</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" id="cust-phone" placeholder="9876543210" pattern="[6-9][0-9]{9}" required>
+                            </div>
+                        </div>
+                        <button type="submit" id="save-customer-btn" class="btn btn-primary">प्रोफ़ाइल लिंक करें</button>
+                    </form>
+                    <div id="customer-status" class="status-msg hidden">
+                        <i class="fa-solid fa-circle-check"></i> नागरिक प्रोफ़ाइल डेटाबेस से लिंक हो गई!
+                    </div>
+                </div>
+
+                <!-- SQLite DB logs inspector -->
+                <div class="card console-card">
+                    <h3><i class="fa-solid fa-bug"></i> डेवलपर डायग्नोस्टिक्स (Diagnostics)</h3>
+                    <p class="section-desc">वास्तविक समय SQLite डेटाबेस पंक्तियाँ देखने के लिए टैब का चयन करें।</p>
+                    
+                    <div class="diag-item">
+                        <span class="diag-label">Session ID:</span>
+                        <span id="session-id-display" class="diag-val code-text">Loading...</span>
+                    </div>
+
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="db-chat">Chat Log</button>
+                        <button class="tab-btn" data-tab="db-customers">Citizens</button>
+                        <button class="tab-btn" data-tab="db-feedback">Feedback</button>
+                    </div>
+
+                    <div class="tab-content-container">
+                        <div id="db-chat" class="tab-content active code-text">
+                            <div class="placeholder-text">Conversations will populate here.</div>
+                        </div>
+                        <div id="db-customers" class="tab-content code-text">
+                            <div class="placeholder-text">Citizens rows will load here.</div>
+                        </div>
+                        <div id="db-feedback" class="tab-content code-text">
+                            <div class="placeholder-text">Submit feedback to see database rows.</div>
+                        </div>
+                    </div>
+
+                    <button id="refresh-db-btn" class="btn btn-secondary btn-sm">
+                        <i class="fa-solid fa-arrows-rotate"></i> Query SQLite Rows
+                    </button>
+                </div>
+
+                <!-- Session Feedback Form -->
+                <div class="card console-card" id="feedback-section-card">
+                    <h3><i class="fa-solid fa-star"></i> सत्र प्रतिक्रिया (Feedback Review)</h3>
+                    <p class="section-desc">चैटबॉट प्रतिक्रिया के बारे में अपने विचार और रेटिंग सबमिट करें।</p>
+                    
+                    <form id="feedback-form">
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5" class="fa-solid fa-star"></label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="fa-solid fa-star"></label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="fa-solid fa-star"></label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="fa-solid fa-star"></label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="fa-solid fa-star"></label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="feedback-comments" rows="2" placeholder="अपनी टिप्पणी लिखें..." required></textarea>
+                        </div>
+                        <button type="submit" id="submit-feedback-btn" class="btn btn-secondary btn-block">प्रतिक्रिया सबमिट करें</button>
+                    </form>
+                    <div id="feedback-status" class="status-msg hidden">
+                        <i class="fa-solid fa-heart"></i> फीडबैक डेटाबेस में सुरक्षित हो गया!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Hidden HTML5 Audio Element for playing speech responses -->
+    <audio id="tts-audio-player"></audio>
+
+    <script>
+        // Store session ID in window scope
+        window.SESSION_ID = "{{ session_id }}";
+    </script>
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

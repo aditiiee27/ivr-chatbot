@@ -1,0 +1,130 @@
+{
+  "complaint_channels": [
+    {
+      "channel": "Toll-Free Call",
+      "channel_hi": "टोल-फ्री कॉल",
+      "steps_en": [
+        "Dial the Toll-Free Helpline: 18001212165.",
+        "Talk to the call center operator.",
+        "Provide your location details (District, Block, Panchayat, Village) and complaint type.",
+        "The operator will submit the grievance. A unique complaint number is sent via SMS & WhatsApp."
+      ],
+      "steps_hi": [
+        "टोल-फ्री हेल्पलाइन डायल करें: 18001212165।",
+        "कॉल सेंटर ऑपरेटर से बात करें।",
+        "अपना स्थान (जिला, ब्लॉक, पंचायत, गाँव) और शिकायत का प्रकार प्रदान करें।",
+        "ऑपरेटर शिकायत दर्ज करेगा। SMS और WhatsApp के माध्यम से एक अनूठी शिकायत संख्या भेजी जाएगी।"
+      ]
+    },
+    {
+      "channel": "WhatsApp Bot",
+      "channel_hi": "व्हाट्सएप बॉट",
+      "steps_en": [
+        "Send 'Hi' to our WhatsApp number (official number listed on portal).",
+        "Select language and details from the automated interactive menu.",
+        "Provide your location (District, Block, Panchayat, Village) and choose complaint type.",
+        "Optionally upload a photo or video of the pipeline issue.",
+        "Your complaint will be logged, and a confirmation text with a status tracking link will be sent."
+      ],
+      "steps_hi": [
+        "हमारे व्हाट्सएप नंबर पर 'Hi' भेजें।",
+        "स्वचालित मेनू से भाषा और विवरण चुनें।",
+        "अपना स्थान (जिला, ब्लॉक, पंचायत, गाँव) और शिकायत का प्रकार चुनें।",
+        "वैकल्पिक रूप से पाइपलाइन समस्या का फोटो या वीडियो अपलोड करें।",
+        "आपकी शिकायत दर्ज हो जाएगी, और ट्रैकिंग लिंक के साथ पुष्टि संदेश भेजा जाएगा।"
+      ]
+    },
+    {
+      "channel": "IVRS",
+      "channel_hi": "आईवीआरएस",
+      "steps_en": [
+        "Call Toll-Free 18001212165.",
+        "Follow the interactive voice response prompt selections.",
+        "Input your mobile number, district, and type of complaint via phone keypad.",
+        "Record a short voice description of the grievance."
+      ],
+      "steps_hi": [
+        "टोल-फ्री 18001212165 पर कॉल करें।",
+        "स्वचालित वॉयस प्रॉम्प्ट के निर्देशों का पालन करें।",
+        "फ़ोन कीपैड के माध्यम से अपना मोबाइल नंबर, जिला और शिकायत प्रकार दर्ज करें।",
+        "शिकायत का एक छोटा वॉयस संदेश रिकॉर्ड करें।"
+      ]
+    },
+    {
+      "channel": "Chatbot Assistant",
+      "channel_hi": "चैटबॉट सहायक",
+      "steps_en": [
+        "Open this chatbot portal.",
+        "Login with OTP verification using your mobile number.",
+        "Select your District, Block, Panchayat, Village, and Grievance type.",
+        "Provide a short description and submit.",
+        "The system registers the grievance and returns a tracking link."
+      ],
+      "steps_hi": [
+        "इस चैटबॉट पोर्टल को खोलें।",
+        "अपने मोबाइल नंबर और OTP सत्यापन के साथ लॉगिन करें।",
+        "अपना जिला, ब्लॉक, पंचायत, गाँव और शिकायत का प्रकार चुनें।",
+        "एक छोटा विवरण दर्ज करें और सबमिट करें।",
+        "सिस्टम शिकायत दर्ज करेगा और ट्रैकिंग लिंक प्रदान करेगा।"
+      ]
+    },
+    {
+      "channel": "Mobile App",
+      "channel_hi": "मोबाइल ऐप",
+      "steps_en": [
+        "Download the Neer Nidaan Mobile App from the Google Play Store.",
+        "Register or log in via OTP verification.",
+        "Select your District, Block, Panchayat, Village, and Grievance type.",
+        "Optionally upload a photo or video of the pipeline issue.",
+        "Write a description and click 'Register Complaint'. Receive a tracking link."
+      ],
+      "steps_hi": [
+        "गूगल प्ले स्टोर से नीर निदान मोबाइल ऐप डाउनलोड करें।",
+        "OTP सत्यापन के माध्यम से पंजीकरण या लॉगिन करें।",
+        "अपना जिला, ब्लॉक, पंचायत, गाँव और शिकायत का प्रकार चुनें।",
+        "वैकल्पिक रूप से क्षतिग्रस्त पाइपलाइन का फोटो/वीडियो अपलोड करें।",
+        "विवरण दर्ज करें और 'शिकायत दर्ज करें' पर क्लिक करें। ट्रैकिंग लिंक प्राप्त करें।"
+      ]
+    },
+    {
+      "channel": "Web Portal",
+      "channel_hi": "वेब पोर्टल",
+      "steps_en": [
+        "Visit https://neernidaan.in/ and log in with your mobile number and OTP.",
+        "Select District, Block, Panchayat, Village, and Complaint Type.",
+        "Upload optional photos/videos and write the description.",
+        "Click 'Register Complaint' to receive your unique tracking number."
+      ],
+      "steps_hi": [
+        "https://neernidaan.in/ पर जाएँ और मोबाइल नंबर और OTP से लॉगिन करें।",
+        "जिला, ब्लॉक, पंचायत, गाँव और शिकायत के प्रकार का चयन करें।",
+        "वैकल्पिक फोटो/वीडियो अपलोड करें और विवरण दर्ज करें।",
+        "शिकायत संख्या प्राप्त करने के लिए 'शिकायत दर्ज करें' पर क्लिक करें।"
+      ]
+    }
+  ],
+  "services_en": [
+    "Water Supply Interruptions (Low pressure, no water, scheduled disruption)",
+    "Water Quality (Muddy, salty, smelly, or contaminated water)",
+    "Damaged Pipeline (Leaking pipes, broken main lines, pipeline bursts)",
+    "New connection registration/queries",
+    "Road Repair (Restoring roads damaged during pipe-laying works)",
+    "Other Water Grievances (General complaints)"
+  ],
+  "services_hi": [
+    "जलापूर्ति बाधा (कम दबाव, पानी न आना, निर्धारित व्यवधान)",
+    "जल की गुणवत्ता (गंदला, खारा, बदबूदार, या प्रदूषित पानी)",
+    "क्षतिग्रस्त पाइपलाइन (लीक होने वाले पाइप, फटी हुई मुख्य लाइनें)",
+    "नया कनेक्शन पंजीकरण/पूछताछ",
+    "सड़क मरम्मत (पाइप बिछाने के काम के दौरान क्षतिग्रस्त सड़कों का पुनर्निर्माण)",
+    "अन्य जल समस्याएँ (सामान्य शिकायतें)"
+  ],
+  "announcements_en": [
+    "Rural tap connection campaign under Jal Jeevan Mission is active across all villages of UP.",
+    "Bilingual Neer Nidaan support is operational 24/7 via toll-free helpline 18001212165."
+  ],
+  "announcements_hi": [
+    "यूपी के सभी गांवों में जल जीवन मिशन के तहत ग्रामीण नल कनेक्शन अभियान सक्रिय है।",
+    "टोल-फ्री हेल्पलाइन 18001212165 के माध्यम से द्विभाषी नीर निदान सहायता 24/7 संचालित है।"
+  ]
+}

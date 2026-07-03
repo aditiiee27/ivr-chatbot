@@ -1,0 +1,633 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "config",
+        "description": "config",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_from_directory",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_customer",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_chat_message",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_chat_history",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_feedback",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_customer_by_phone",
+        "importPath": "chatbot.database",
+        "description": "chatbot.database",
+        "isExtraImport": true,
+        "detail": "chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "generate_chatbot_response",
+        "importPath": "chatbot.llm_handler",
+        "description": "chatbot.llm_handler",
+        "isExtraImport": true,
+        "detail": "chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "generate_speech",
+        "importPath": "chatbot.speech",
+        "description": "chatbot.speech",
+        "isExtraImport": true,
+        "detail": "chatbot.speech",
+        "documentation": {}
+    },
+    {
+        "label": "pregenerate_welcome_audio",
+        "importPath": "chatbot.speech",
+        "description": "chatbot.speech",
+        "isExtraImport": true,
+        "detail": "chatbot.speech",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "get_db_connection",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def get_db_connection():\n    \"\"\"\n    Establishes and returns a connection to the SQLite database.\n    Enables sqlite3.Row formatting to allow accessing columns by name.\n    \"\"\"\n    conn = sqlite3.connect(config.DATABASE_PATH)\n    conn.row_factory = sqlite3.Row\n    return conn\ndef init_db():\n    \"\"\"",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def init_db():\n    \"\"\"\n    Initializes the database by creating tables if they do not exist:\n    - customers: holds details of registered customers.\n    - chat_history: stores conversations linked by a session identifier.\n    - feedback: saves ratings and text comments from users.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    # 1. Create Customers Table",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_customer",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def save_customer(name, email, phone):\n    \"\"\"\n    Saves new customer details. If the email or phone already exists,\n    retrieves and returns the existing customer record.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    try:\n        # Check if customer already exists by phone or email\n        cursor.execute(",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_customer_by_phone",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def get_customer_by_phone(phone):\n    \"\"\"\n    Fetches a customer record by phone number.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT * FROM customers WHERE phone = ?\", (phone,))\n    customer = cursor.fetchone()\n    conn.close()\n    return dict(customer) if customer else None",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_chat_message",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def save_chat_message(session_id, role, content, audio_file=None):\n    \"\"\"\n    Inserts a single message (from user or assistant) into the chat history.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    try:\n        cursor.execute(\n            \"INSERT INTO chat_history (session_id, role, content, audio_file) VALUES (?, ?, ?, ?)\",\n            (session_id, role, content, audio_file)",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_chat_history",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def get_chat_history(session_id):\n    \"\"\"\n    Retrieves all messages associated with a session ID, sorted chronologically.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    cursor.execute(\n        \"SELECT role, content, audio_file, created_at FROM chat_history WHERE session_id = ? ORDER BY created_at ASC\",\n        (session_id,)\n    )",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "save_feedback",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.database",
+        "description": "customer-support-bot.chatbot.database",
+        "peekOfCode": "def save_feedback(session_id, rating, comments):\n    \"\"\"\n    Stores customer feedback rating and comments.\n    \"\"\"\n    conn = get_db_connection()\n    cursor = conn.cursor()\n    try:\n        cursor.execute(\n            \"INSERT INTO feedback (session_id, rating, comments) VALUES (?, ?, ?)\",\n            (session_id, rating, comments)",
+        "detail": "customer-support-bot.chatbot.database",
+        "documentation": {}
+    },
+    {
+        "label": "load_json_file",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "def load_json_file(filepath, default):\n    \"\"\"Loads a JSON file dynamically to ensure admin changes are live.\"\"\"\n    try:\n        if os.path.exists(filepath):\n            with open(filepath, 'r', encoding='utf-8') as f:\n                return json.load(f)\n    except Exception as e:\n        print(f\"Error loading {filepath}: {e}\")\n    return default\ndef get_latest_system_prompt():",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "get_latest_system_prompt",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "def get_latest_system_prompt():\n    \"\"\"Generates the system prompt dynamically using the latest JSON files.\"\"\"\n    kb = load_json_file(config.KNOWLEDGE_BASE_PATH, {})\n    faqs = load_json_file(config.FAQ_DATA_PATH, [])\n    depts = load_json_file(config.DEPARTMENTS_PATH, [])\n    portal = load_json_file(config.PORTAL_DATA_PATH, {})\n    # Format Departments\n    dept_str = \"\"\n    for d in depts:\n        dept_str += f\"- {d.get('code')}: {d.get('name_en')} ({d.get('name_hi')}) - {d.get('description_en')} / {d.get('description_hi')}\\n\"",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "detect_language",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "def detect_language(text):\n    \"\"\"Basic check to see if the user query contains Hindi characters or keywords.\"\"\"\n    # Check for Hindi unicode range\n    if re.search(r'[\\u0900-\\u097F]', text):\n        return 'hi'\n    # Check for common Hindi keywords typed in English (Hinglish)\n    hinglish_keywords = ['paani', 'pani', 'shikayat', 'jila', 'gaon', 'namaste', ' helpline', 'samashya', 'samanya', 'road', 'sadak', 'pipe']\n    text_lower = text.lower()\n    if any(k in text_lower for k in hinglish_keywords):\n        return 'hi'",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "get_mock_response",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "def get_mock_response(user_message, history):\n    \"\"\"\n    Offline bilingual dialogue engine mapping keywords/intents from JSON to answers.\n    Tracks state dynamically by inspecting the conversation history.\n    \"\"\"\n    msg = user_message.lower().strip()\n    lang = detect_language(user_message)\n    # Dynamic JSON data loading\n    kb = load_json_file(config.KNOWLEDGE_BASE_PATH, {})\n    faqs = load_json_file(config.FAQ_DATA_PATH, [])",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "generate_chatbot_response",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "def generate_chatbot_response(user_message, history):\n    \"\"\"\n    Orchestrates the response generation.\n    Checks the configured provider:\n    - If provider is 'openai' and key is present, calls OpenAI chat completions.\n    - If provider is 'gemini' and key is present, calls Gemini API.\n    - Otherwise (or on failure), falls back to the local rule-based mock engine.\n    \"\"\"\n    provider = config.LLM_PROVIDER\n    # Validation: Fallback automatically if credentials are not set",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "openai_client",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "openai_client = None\nif config.OPENAI_API_KEY:\n    try:\n        from openai import OpenAI\n        openai_client = OpenAI(api_key=config.OPENAI_API_KEY)\n    except Exception as e:\n        print(f\"Failed to initialize OpenAI client: {e}\")\ngemini_available = False\nif config.GEMINI_API_KEY:\n    try:",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "gemini_available",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.llm_handler",
+        "description": "customer-support-bot.chatbot.llm_handler",
+        "peekOfCode": "gemini_available = False\nif config.GEMINI_API_KEY:\n    try:\n        import google.generativeai as genai\n        genai.configure(api_key=config.GEMINI_API_KEY)\n        gemini_available = True\n    except Exception as e:\n        print(f\"Failed to initialize Gemini API client: {e}\")\ndef load_json_file(filepath, default):\n    \"\"\"Loads a JSON file dynamically to ensure admin changes are live.\"\"\"",
+        "detail": "customer-support-bot.chatbot.llm_handler",
+        "documentation": {}
+    },
+    {
+        "label": "load_json_file",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "def load_json_file(filepath, default):\n    try:\n        if os.path.exists(filepath):\n            with open(filepath, 'r', encoding='utf-8') as f:\n                return json.load(f)\n    except Exception as e:\n        print(f\"Error loading {filepath}: {e}\")\n    return default\n# Load database configurations\nkb = load_json_file(config.KNOWLEDGE_BASE_PATH, {})",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "kb",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "kb = load_json_file(config.KNOWLEDGE_BASE_PATH, {})\nfaqs = load_json_file(config.FAQ_DATA_PATH, [])\ndepts = load_json_file(config.DEPARTMENTS_PATH, [])\nportal = load_json_file(config.PORTAL_DATA_PATH, {})\n# Format FAQs for prompt inclusion\nfaq_str = \"\"\nfor item in faqs:\n    faq_str += f\"- Question: {item.get('question_en')} / {item.get('question_hi')}\\n\"\n    faq_str += f\"  Answer: {item.get('answer_en')} / {item.get('answer_hi')}\\n\"\n# Format Departments for prompt inclusion",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "faqs",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "faqs = load_json_file(config.FAQ_DATA_PATH, [])\ndepts = load_json_file(config.DEPARTMENTS_PATH, [])\nportal = load_json_file(config.PORTAL_DATA_PATH, {})\n# Format FAQs for prompt inclusion\nfaq_str = \"\"\nfor item in faqs:\n    faq_str += f\"- Question: {item.get('question_en')} / {item.get('question_hi')}\\n\"\n    faq_str += f\"  Answer: {item.get('answer_en')} / {item.get('answer_hi')}\\n\"\n# Format Departments for prompt inclusion\ndept_str = \"\"",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "depts",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "depts = load_json_file(config.DEPARTMENTS_PATH, [])\nportal = load_json_file(config.PORTAL_DATA_PATH, {})\n# Format FAQs for prompt inclusion\nfaq_str = \"\"\nfor item in faqs:\n    faq_str += f\"- Question: {item.get('question_en')} / {item.get('question_hi')}\\n\"\n    faq_str += f\"  Answer: {item.get('answer_en')} / {item.get('answer_hi')}\\n\"\n# Format Departments for prompt inclusion\ndept_str = \"\"\nfor d in depts:",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "portal",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "portal = load_json_file(config.PORTAL_DATA_PATH, {})\n# Format FAQs for prompt inclusion\nfaq_str = \"\"\nfor item in faqs:\n    faq_str += f\"- Question: {item.get('question_en')} / {item.get('question_hi')}\\n\"\n    faq_str += f\"  Answer: {item.get('answer_en')} / {item.get('answer_hi')}\\n\"\n# Format Departments for prompt inclusion\ndept_str = \"\"\nfor d in depts:\n    dept_str += f\"- {d.get('code')}: {d.get('name_en')} ({d.get('name_hi')}) - {d.get('description_en')} / {d.get('description_hi')}\\n\"",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "faq_str",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "faq_str = \"\"\nfor item in faqs:\n    faq_str += f\"- Question: {item.get('question_en')} / {item.get('question_hi')}\\n\"\n    faq_str += f\"  Answer: {item.get('answer_en')} / {item.get('answer_hi')}\\n\"\n# Format Departments for prompt inclusion\ndept_str = \"\"\nfor d in depts:\n    dept_str += f\"- {d.get('code')}: {d.get('name_en')} ({d.get('name_hi')}) - {d.get('description_en')} / {d.get('description_hi')}\\n\"\n# Format Grievance Channels\nchannel_str = \"\"",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "dept_str",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "dept_str = \"\"\nfor d in depts:\n    dept_str += f\"- {d.get('code')}: {d.get('name_en')} ({d.get('name_hi')}) - {d.get('description_en')} / {d.get('description_hi')}\\n\"\n# Format Grievance Channels\nchannel_str = \"\"\nfor ch in portal.get(\"complaint_channels\", []):\n    channel_str += f\"- {ch.get('channel')}:\\n\"\n    for step in ch.get(\"steps_en\", []):\n        channel_str += f\"  * {step}\\n\"\nSYSTEM_PROMPT = f\"\"\"",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "channel_str",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "channel_str = \"\"\nfor ch in portal.get(\"complaint_channels\", []):\n    channel_str += f\"- {ch.get('channel')}:\\n\"\n    for step in ch.get(\"steps_en\", []):\n        channel_str += f\"  * {step}\\n\"\nSYSTEM_PROMPT = f\"\"\"\nYou are \"Neer Sahayak\" (Water Grievance Redressal Assistant), a helpful, friendly, and bilingual (Hindi/English) AI support assistant for the UP Government's \"Neer Nidaan\" water grievance portal.\nYour tone must be:\n1. Polite, respectful, professional, and citizen-friendly.\n2. Concise: Keep your responses relatively short (1-3 sentences) so that it sounds natural when read aloud via Text-to-Speech (TTS).",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "SYSTEM_PROMPT = f\"\"\"\nYou are \"Neer Sahayak\" (Water Grievance Redressal Assistant), a helpful, friendly, and bilingual (Hindi/English) AI support assistant for the UP Government's \"Neer Nidaan\" water grievance portal.\nYour tone must be:\n1. Polite, respectful, professional, and citizen-friendly.\n2. Concise: Keep your responses relatively short (1-3 sentences) so that it sounds natural when read aloud via Text-to-Speech (TTS).\n3. Dual-Language Adaptive: Answer in Hindi if the citizen writes in Hindi, and in English if they write in English. If they mix both (Hinglish), use a conversational blend.\nPortal Context & Knowledge Base:\n- Portal Name: Neer Nidaan (नीर निदान)\n- Organization: {kb.get('organization_en')} ({kb.get('organization_hi')})\n- Helpline Toll-Free: {kb.get('helpline')}",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "MOCK_KNOWLEDGE",
+        "kind": 5,
+        "importPath": "customer-support-bot.chatbot.prompts",
+        "description": "customer-support-bot.chatbot.prompts",
+        "peekOfCode": "MOCK_KNOWLEDGE = {\n    \"kb\": kb,\n    \"faqs\": faqs,\n    \"depts\": depts,\n    \"portal\": portal\n}",
+        "detail": "customer-support-bot.chatbot.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "generate_speech",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.speech",
+        "description": "customer-support-bot.chatbot.speech",
+        "peekOfCode": "def generate_speech(text, lang='en'):\n    \"\"\"\n    Converts text to speech (TTS) using gTTS and returns the filename.\n    Implements a caching mechanism:\n    1. Computes an MD5 hash of the response text and language.\n    2. If an MP3 for this hash already exists in static/audio/, returns the existing file.\n    3. Otherwise, generates a new MP3 using gTTS and saves it.\n    4. Handles exceptions gracefully (e.g., if internet is offline).\n    Returns:\n        str: The name of the generated audio file (e.g., 'a8f9e2...mp3')",
+        "detail": "customer-support-bot.chatbot.speech",
+        "documentation": {}
+    },
+    {
+        "label": "pregenerate_welcome_audio",
+        "kind": 2,
+        "importPath": "customer-support-bot.chatbot.speech",
+        "description": "customer-support-bot.chatbot.speech",
+        "peekOfCode": "def pregenerate_welcome_audio():\n    \"\"\"\n    Pregenerates both English and Hindi welcome audio files on server startup.\n    \"\"\"\n    welcomes = {\n        \"welcome_en.mp3\": (\"Hello! Welcome to the Neer Nidaan Grievance Assistant portal. How can I help you today?\", \"en\"),\n        \"welcome_hi.mp3\": (\"नमस्कार! नीर निदान शिकायत सहायक पोर्टल पर आपका स्वागत है। आज मैं आपकी क्या सहायता कर सकता हूँ?\", \"hi\")\n    }\n    for filename, (text, lang) in welcomes.items():\n        filepath = os.path.join(config.AUDIO_DIR, filename)",
+        "detail": "customer-support-bot.chatbot.speech",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def index():\n    \"\"\"\n    Renders the main IVR-style support dashboard.\n    Generates a unique session_id if one doesn't exist.\n    \"\"\"\n    session_id = request.args.get('session_id') or str(uuid.uuid4())\n    return render_template('index.html', session_id=session_id)\n@app.route('/api/chat', methods=['POST'])\ndef chat():\n    \"\"\"",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def chat():\n    \"\"\"\n    Processes a chat message sent by the user:\n    1. Saves the user's message in the DB.\n    2. Retrieves current session history.\n    3. Generates Neer Sahayak's bilingual response via LLM (or fallback Mock).\n    4. Converts the response text to speech in the appropriate language.\n    5. Saves the response and its audio file name in the DB.\n    6. Returns response text and audio file link as JSON.\n    \"\"\"",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "customer",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def customer():\n    \"\"\"\n    API endpoint to save customer registration details.\n    \"\"\"\n    data = request.json or {}\n    name = data.get('name', '').strip()\n    email = data.get('email', '').strip()\n    phone = data.get('phone', '').strip()\n    if not name or not email or not phone:\n        return jsonify({\"error\": \"All fields (name, email, phone) are required\"}), 400",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "feedback",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def feedback():\n    \"\"\"\n    API endpoint to record customer satisfaction ratings and comments.\n    \"\"\"\n    data = request.json or {}\n    session_id = data.get('session_id')\n    rating = data.get('rating')\n    comments = data.get('comments', '').strip()\n    if not session_id or rating is None:\n        return jsonify({\"error\": \"Missing session_id or rating\"}), 400",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def history():\n    \"\"\"\n    API endpoint to fetch session history logs.\n    \"\"\"\n    session_id = request.args.get('session_id')\n    if not session_id:\n        return jsonify({\"error\": \"Missing session_id\"}), 400\n    chat_logs = get_chat_history(session_id)\n    return jsonify(chat_logs)\n@app.route('/api/debug_db', methods=['GET'])",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "debug_db",
+        "kind": 2,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "def debug_db():\n    \"\"\"\n    Diagnostic API endpoint that pulls rows from sqlite database tables.\n    Allows testing visibility of DB transactions directly from the browser.\n    \"\"\"\n    try:\n        from chatbot.database import get_db_connection\n        conn = get_db_connection()\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM customers ORDER BY created_at DESC LIMIT 10\")",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "customer-support-bot.app",
+        "description": "customer-support-bot.app",
+        "peekOfCode": "app = Flask(__name__)\napp.config.from_object(config)\n# Initialize database tables and welcome assets on startup\nwith app.app_context():\n    init_db()\n    pregenerate_welcome_audio()\n@app.route('/')\ndef index():\n    \"\"\"\n    Renders the main IVR-style support dashboard.",
+        "detail": "customer-support-bot.app",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "BASE_DIR = os.path.abspath(os.path.dirname(__file__))\n# Flask configuration\nSECRET_KEY = os.environ.get(\"SECRET_KEY\", \"super-secret-key-for-ivr-chatbot-internship\")\n# Database configuration\nDATABASE_PATH = os.path.join(BASE_DIR, \"database.db\")\n# Static directory for TTS audio output\nAUDIO_DIR = os.path.join(BASE_DIR, \"static\", \"audio\")\n# Create audio directory if it doesn't exist yet\nif not os.path.exists(AUDIO_DIR):\n    os.makedirs(AUDIO_DIR)",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "SECRET_KEY = os.environ.get(\"SECRET_KEY\", \"super-secret-key-for-ivr-chatbot-internship\")\n# Database configuration\nDATABASE_PATH = os.path.join(BASE_DIR, \"database.db\")\n# Static directory for TTS audio output\nAUDIO_DIR = os.path.join(BASE_DIR, \"static\", \"audio\")\n# Create audio directory if it doesn't exist yet\nif not os.path.exists(AUDIO_DIR):\n    os.makedirs(AUDIO_DIR)\n# LLM API configuration\n# Providers supported: \"openai\", \"gemini\", \"mock\" (offline fallback)",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "DATABASE_PATH = os.path.join(BASE_DIR, \"database.db\")\n# Static directory for TTS audio output\nAUDIO_DIR = os.path.join(BASE_DIR, \"static\", \"audio\")\n# Create audio directory if it doesn't exist yet\nif not os.path.exists(AUDIO_DIR):\n    os.makedirs(AUDIO_DIR)\n# LLM API configuration\n# Providers supported: \"openai\", \"gemini\", \"mock\" (offline fallback)\nLLM_PROVIDER = os.environ.get(\"LLM_PROVIDER\", \"mock\").lower()\n# API Keys",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "AUDIO_DIR",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "AUDIO_DIR = os.path.join(BASE_DIR, \"static\", \"audio\")\n# Create audio directory if it doesn't exist yet\nif not os.path.exists(AUDIO_DIR):\n    os.makedirs(AUDIO_DIR)\n# LLM API configuration\n# Providers supported: \"openai\", \"gemini\", \"mock\" (offline fallback)\nLLM_PROVIDER = os.environ.get(\"LLM_PROVIDER\", \"mock\").lower()\n# API Keys\nOPENAI_API_KEY = os.environ.get(\"OPENAI_API_KEY\", \"\")\nGEMINI_API_KEY = os.environ.get(\"GEMINI_API_KEY\", \"\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "LLM_PROVIDER",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "LLM_PROVIDER = os.environ.get(\"LLM_PROVIDER\", \"mock\").lower()\n# API Keys\nOPENAI_API_KEY = os.environ.get(\"OPENAI_API_KEY\", \"\")\nGEMINI_API_KEY = os.environ.get(\"GEMINI_API_KEY\", \"\")\n# LLM Model choices\nOPENAI_MODEL = os.environ.get(\"OPENAI_MODEL\", \"gpt-4o-mini\")\nGEMINI_MODEL = os.environ.get(\"GEMINI_MODEL\", \"gemini-1.5-flash\")\n# JSON Data configuration for Neer Nidaan Admin files\nKNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "OPENAI_API_KEY",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "OPENAI_API_KEY = os.environ.get(\"OPENAI_API_KEY\", \"\")\nGEMINI_API_KEY = os.environ.get(\"GEMINI_API_KEY\", \"\")\n# LLM Model choices\nOPENAI_MODEL = os.environ.get(\"OPENAI_MODEL\", \"gpt-4o-mini\")\nGEMINI_MODEL = os.environ.get(\"GEMINI_MODEL\", \"gemini-1.5-flash\")\n# JSON Data configuration for Neer Nidaan Admin files\nKNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "GEMINI_API_KEY",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "GEMINI_API_KEY = os.environ.get(\"GEMINI_API_KEY\", \"\")\n# LLM Model choices\nOPENAI_MODEL = os.environ.get(\"OPENAI_MODEL\", \"gpt-4o-mini\")\nGEMINI_MODEL = os.environ.get(\"GEMINI_MODEL\", \"gemini-1.5-flash\")\n# JSON Data configuration for Neer Nidaan Admin files\nKNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "OPENAI_MODEL",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "OPENAI_MODEL = os.environ.get(\"OPENAI_MODEL\", \"gpt-4o-mini\")\nGEMINI_MODEL = os.environ.get(\"GEMINI_MODEL\", \"gemini-1.5-flash\")\n# JSON Data configuration for Neer Nidaan Admin files\nKNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "GEMINI_MODEL",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "GEMINI_MODEL = os.environ.get(\"GEMINI_MODEL\", \"gemini-1.5-flash\")\n# JSON Data configuration for Neer Nidaan Admin files\nKNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "KNOWLEDGE_BASE_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "KNOWLEDGE_BASE_PATH = os.path.join(BASE_DIR, \"knowledge_base.json\")\nFAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "FAQ_DATA_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "FAQ_DATA_PATH = os.path.join(BASE_DIR, \"faq_data.json\")\nINTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "INTENTS_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "INTENTS_PATH = os.path.join(BASE_DIR, \"intents.json\")\nDEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "DEPARTMENTS_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "DEPARTMENTS_PATH = os.path.join(BASE_DIR, \"departments.json\")\nPORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    },
+    {
+        "label": "PORTAL_DATA_PATH",
+        "kind": 5,
+        "importPath": "customer-support-bot.config",
+        "description": "customer-support-bot.config",
+        "peekOfCode": "PORTAL_DATA_PATH = os.path.join(BASE_DIR, \"portal_data.json\")",
+        "detail": "customer-support-bot.config",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,17 @@
+{
+  "greetings": {
+    "keywords": ["hi", "hello", "hey", "namaste", "pranam", "greetings", "नमस्ते", "नमस्कार", "हैलो", "प्रणाम", "राम राम"],
+    "response_en": "Hello! Welcome to the Neer Nidaan Grievance Assistant portal. I am here to help you register water supply issues, track your complaints, or answer portal-related questions. How can I assist you today?",
+    "response_hi": "नमस्कार! नीर निदान शिकायत सहायक पोर्टल पर आपका स्वागत है। मैं यहाँ जलापूर्ति की समस्याओं को दर्ज करने, शिकायत की स्थिति ट्रैक करने या पोर्टल से संबंधित प्रश्नों के उत्तर देने में आपकी सहायता के लिए हूँ। आज मैं आपकी क्या सहायता कर सकता हूँ?"
+  },
+  "frustration": {
+    "keywords": ["angry", "bad service", "useless", "worst", "slow", "annoyed", "garbage", "rubbish", "complaining", "officer", "अधिकारी", "खराब", "बकवास", "देरी", "गुस्सा"],
+    "response_en": "I sincerely apologize for the inconvenience and delay you have experienced. I want to resolve this for you. Let me gather your contact details so a senior department officer can call you directly. Could you please share your name?",
+    "response_hi": "आपको हुई असुविधा और देरी के लिए मैं ईमानदारी से क्षमा चाहता हूँ। मैं इसे आपके लिए हल करना चाहता हूँ। कृपया मुझे अपना विवरण प्रदान करें ताकि हमारे वरिष्ठ विभागीय अधिकारी आपसे सीधे संपर्क कर सकें। क्या मैं आपका शुभ नाम जान सकता हूँ?"
+  },
+  "help": {
+    "keywords": ["help", "support", "assist", "what can you do", "features", "मदद", "सहायता", "क्या कर सकते हो"],
+    "response_en": "I can help you register complaints (damaged pipeline, water supply, quality, road repair, new connection), track complaint status, explain Neer Nidaan services, provide contact details, or record feedback. You can ask me in English or Hindi!",
+    "response_hi": "मैं शिकायत दर्ज करने (क्षतिग्रस्त पाइपलाइन, जलापूर्ति बाधा, गुणवत्ता, सड़क मरम्मत, नया कनेक्शन), शिकायत की स्थिति जांचने, नीर निदान सेवाओं की जानकारी देने, संपर्क सूत्र बताने या फीडबैक लेने में सहायता कर सकता हूँ। आप मुझसे हिंदी या अंग्रेजी में बात कर सकते हैं!"
+  }
+}
